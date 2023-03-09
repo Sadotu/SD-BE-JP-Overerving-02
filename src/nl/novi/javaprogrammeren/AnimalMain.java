@@ -33,5 +33,56 @@ public class AnimalMain {
     Alles staat hier in het Nederlands beschreven. Schrijf je klassen-, variabele en methodenamen in het Engels.
 
      */
+    public static void main(String[] args) {
+        Tiger tiger1 = new Tiger("Tony", 'M', "Likes to swim", "Pen 1", "2022-11-01", "India");
+        Tiger tiger2 = new Tiger("Simba", 'M', "Loves to play with toys", "Pen 2", "2022-11-02", "Africa");
+        Tiger tiger3 = new Tiger("Shere Khan", 'M', "Enjoys sunbathing", "Pen 3", "2022-11-03", "India");
 
+        Lion lion1 = new Lion("Mufasa", 'M', "Likes to roar", "Pen 4", "2022-11-04", "Africa");
+        Lion lion2 = new Lion("Nala", 'F', "Enjoys playing with cubs", "Pen 5", "2022-11-05", "Africa");
+        Lion lion3 = new Lion("Scar", 'M', "Prefers to be alone", "Pen 6", "2022-11-06", "Africa");
+
+        Dog dog1 = new Dog("Buddy", 'M', "Loves to fetch", "John Smith", "Bacon treats","Golden Retriever");
+        Dog dog2 = new Dog("Bella",'F',"Enjoys belly rubs","Jane Doe","Chicken treats","Labrador Retriever");
+        Dog dog3 = new Dog("Max",'M',"Likes to play tug-of-war","Bob Johnson","Beef treats","German Shepherd");
+
+        Cat cat1 = new Cat("Whiskers",'F',"Enjoys napping in the sun","Samantha Brown","Tuna treats","Siamese");
+        Cat cat2 = new Cat("Simba",'M',"Likes to chase toys","Emily Davis","Salmon treats","Bengal");
+        Cat cat3 = new Cat("Sassy",'F',"Prefers to be petted","Michael Thompson","Chicken treats","Persian");
+
+        Wolf wolf1 = new Wolf("Akela",'M',"Leader of the pack","Pen 7","2022-11-07","North America");
+        Wolf wolf2 = new Wolf("Raksha",'F',"Protective of her cubs","Pen 8" ,"2022-11-08" ,"North America");
+        Wolf wolf3 = new Wolf("Grey Brother",'M',"Skilled hunter" ,"Pen 9" ,"2022-11-09" ,"North America");
+
+        lion1.move();
+        lion2.sound();
+        lion3.sleep();
+
+        dog1.move();
+        dog2.sound();
+        dog3.sleep();
+
+        cat1.move();
+        cat2.sound();
+        cat3.sleep();
+
+        wolf1.move();
+        wolf2.sound();
+        wolf3.sleep();
+
+        tiger1.eat("meat");
+        tiger2.eat("chicken");
+        tiger3.eat("fish");
+
+        Zoo zoo = new Zoo();
+        zoo.addAnimal(tiger1.getName());
+        zoo.addAnimal(tiger2.getName());
+        zoo.addAnimal(tiger3.getName());
+
+        zoo.addAnimal(lion1.getName());
+        zoo.addAnimal(lion2.getName());
+        zoo.addAnimal(lion3.getName());
+
+        zoo.printAnimals();
+    }
 }
