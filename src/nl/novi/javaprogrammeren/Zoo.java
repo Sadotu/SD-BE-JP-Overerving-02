@@ -1,21 +1,21 @@
 package nl.novi.javaprogrammeren;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Zoo {
-    private ArrayList<String> animals;
+    private ArrayList<Animal> animals;
 
     public Zoo() {
-        this.animals = new ArrayList<String>();
+        this.animals = new ArrayList<Animal>();
     }
 
-    public void addAnimal(String animal) {
+    public void addAnimal(Animal animal) {
         this.animals.add(animal);
     }
 
     public void printAnimals() {
-        System.out.println(String.join(", ", this.animals));
+        for (Animal animal : this.animals) {
+            System.out.println(animal.getName());
+        }
     }
 }

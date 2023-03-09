@@ -75,13 +75,13 @@ public class AnimalMain {
         tiger3.eat("fish");
 
         Zoo zoo = new Zoo();
-        zoo.addAnimal(tiger1.getName());
-        zoo.addAnimal(tiger2.getName());
-        zoo.addAnimal(tiger3.getName());
+        zoo.addAnimal(tiger1);
+        zoo.addAnimal(tiger2);
+        zoo.addAnimal(tiger3);
 
-        zoo.addAnimal(lion1.getName());
-        zoo.addAnimal(lion2.getName());
-        zoo.addAnimal(lion3.getName());
+        zoo.addAnimal(lion1);
+        zoo.addAnimal(lion2);
+        zoo.addAnimal(lion3);
 
         zoo.printAnimals();
     }
